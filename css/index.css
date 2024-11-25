@@ -1,28 +1,4 @@
-.Buttons{
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-    background-color: black;
-padding: 10px;
-width: 300px;
-margin-left: 1210px;
 
-
-
-}
-#H1{
-    text-align: center;
-    background-color: black;
-    color: white;
-padding: 20px;
-font-size: 60px;
-    font-family: "Helvetica", "Arial", sans-serif;
-  border-radius: 20px;
-  width: 600px;
-  margin-left: 450px;
-  border: dotted 0.4px red;
-  text-shadow: 2px 2px 5px blue;
-}
 
 #footer{
     color: white;
@@ -32,31 +8,7 @@ body{
     background-color: black;
 }
 
-#button{
-    color: white;
-    background-color: black;
-    border: none;
-    text-shadow: 1px 1px 5px blue;
-}
 
-#button2{
-    color: white;
-    background-color: black;
-    border: none;
-    text-shadow: 1px 1px  5px blue;
-}
-#button3{
-    color: white;
-    background-color: black;
-    border: none;
-    text-shadow: 1px 1px  5px blue;
-}
-#button4{
-    color: white;
-    background-color: black;
-    border: none;
-    text-shadow: 1px 1px 5px blue;
-}
 #p1{
     color: white;
 }
@@ -83,4 +35,24 @@ body{
 #h22{
     text-decoration: underline blue;
 
+}
+
+
+
+.side{
+    width: 200px;
+    height: 100vh; 
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    position: fixed; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+#open{
+    color: white;
+    margin-left: 400px;
 }
