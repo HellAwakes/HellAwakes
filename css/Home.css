@@ -2,17 +2,85 @@
     display: flex;
     justify-content: right;
     gap: 10px;
-    background-color: rgb(32, 32, 168);
+    background-color: black;
 padding: 10px;
 width: 300px;
-margin-left: 1240px;
+margin-left: 1210px;
+
+
+
 }
 #H1{
     text-align: center;
     background-color: black;
     color: white;
 padding: 20px;
-font-size: 50px;
+font-size: 60px;
     font-family: "Helvetica", "Arial", sans-serif;
-  
+  border-radius: 20px;
+  width: 600px;
+  margin-left: 450px;
+  border: dotted 0.4px red;
+  text-shadow: 2px 2px 5px blue;
+}
+
+#footer{
+    color: white;
+text-align: center;
+}
+body{
+    background-color: black;
+}
+
+#button{
+    color: white;
+    background-color: black;
+    border: none;
+    text-shadow: 1px 1px 5px blue;
+}
+
+#button2{
+    color: white;
+    background-color: black;
+    border: none;
+    text-shadow: 1px 1px  5px blue;
+}
+#button3{
+    color: white;
+    background-color: black;
+    border: none;
+    text-shadow: 1px 1px  5px blue;
+}
+#button4{
+    color: white;
+    background-color: black;
+    border: none;
+    text-shadow: 1px 1px 5px blue;
+}
+#p1{
+    color: white;
+}
+#h2{
+    color: white;
+    text-decoration: underline blue;
+}
+.paragraphs{
+    margin-left: 600px;
+    width: 500px;
+    height: 400px;
+    font-size: 20px;
+    color: white;
+ text-shadow: 1px 1px 5px blue;
+}
+
+#button5{
+    color: blue;
+    background-color: black;
+    border: none;
+    text-shadow: 1px 1px 5px blue;
+}
+
+#h22{
+    text-decoration: underline blue;
+
 }
