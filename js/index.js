@@ -1,14 +1,14 @@
+const sidebar = document.getElementById("Sidebar");
+const openButton = document.getElementById("open");
 
-const Sidebar = document.getElementsByClassName("sidebar");
-document.getElementById("open"),addEventListener('click', openSideBar);
+sidebar.style.transform = "translateX(-100%)";
+sidebar.style.transition = "transform 0.3s ease";
 
-function openSideBar() {
-    if(Sidebar.style.display === 'none' || Sidebar.style.display === '') {
-        Sidebar.style.display = 'block';
-        } else {
-            Sidebar.style.display = 'none';
 
-        }
-    )
-}
-
+openButton.addEventListener("click", () => {
+    if (sidebar.style.transform === "translateX(-100%)") {
+        sidebar.style.transform = "translateX(0)";
+    } else {
+        sidebar.style.transform = "translateX(-100%)";
+    }
+});
