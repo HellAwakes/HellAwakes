@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     background-color: black;
     color: white;
@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-/* Sidebar Styles */
+
 .side {
     width: 200px;
     height: 100vh; 
@@ -41,7 +41,7 @@ body {
     border: none;
 }
 
-/* Open Button */
+
 #open {
     margin: 15px;
     background: black;
@@ -53,11 +53,25 @@ body {
     box-shadow: 2px 2px 10px blue;
 }
 
-/* Content Section */
+
 .content {
     margin-left: 220px;
     padding: 20px;
     max-width: 900px;
+}
+
+
+.paragraphs {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto; 
+    padding: 20px; 
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    text-shadow: 1px 1px 5px blue;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
 }
 
 .paragraphs h2 {
@@ -72,7 +86,7 @@ body {
     text-shadow: 1px 1px 5px blue;
 }
 
-/* Footer */
+
 #footer {
     text-align: center;
     padding: 10px;
@@ -83,7 +97,7 @@ body {
     width: 100%;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .side {
         width: 150px;
@@ -95,6 +109,11 @@ body {
 
     #open {
         margin-left: 10px;
+    }
+
+    .paragraphs {
+        font-size: 1rem; 
+        padding: 15px; 
     }
 
     .paragraphs p {
@@ -114,5 +133,14 @@ body {
     #open {
         margin: 10px;
         width: 100%;
+    }
+
+    .paragraphs {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .paragraphs p {
+        font-size: 0.9rem;
     }
 }
