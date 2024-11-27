@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
     background-color: black;
     color: white;
@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-
+/* Sidebar Styles */
 .side {
     width: 200px;
     height: 100vh; 
@@ -41,7 +41,7 @@ body {
     border: none;
 }
 
-
+/* Open Button */
 #open {
     margin: 15px;
     background: black;
@@ -51,42 +51,43 @@ body {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 2px 2px 10px blue;
-    border-radius: 50px;
 }
 
-
+/* Content Section */
 .content {
     margin-left: 220px;
     padding: 20px;
     max-width: 900px;
 }
 
-
+/* Paragraphs Section */
 .paragraphs {
-    max-width: 800px;
-    width: 90%; 
-    margin: 20px auto; 
-    padding: 30px; 
-    font-size: 1.4rem; 
-    line-height: 1.8; 
+    max-width: 800px; /* Maximum width for larger screens */
+    width: 90%; /* Take up 90% of the screen on smaller devices */
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    padding: 30px; /* Add padding for spacing */
+    font-size: 1.4rem; /* Larger font size for readability */
+    line-height: 1.8; /* Increase line spacing for better readability */
     color: white;
-    background-color: rgba(0, 0, 0, 0.6); 
-    border-radius: 10px; 
-    text-align: center; 
+    text-shadow: 1px 1px 5px blue;
+    background-color: rgba(0, 0, 0, 0.6); /* Subtle background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center the text */
 }
 
 .paragraphs h2 {
     color: white;
-    text-decoration: underline red;
+    text-decoration: underline blue;
 }
 
 .paragraphs p {
     font-size: 1.4rem;
     line-height: 1.8;
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 5px blue;
 }
 
-
+/* Footer */
 #footer {
     text-align: center;
     padding: 10px;
@@ -97,7 +98,7 @@ body {
     width: 100%;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .side {
         width: 150px;
@@ -112,8 +113,8 @@ body {
     }
 
     .paragraphs {
-        font-size: 1.2rem; 
-        padding: 20px; 
+        font-size: 1.2rem; /* Slightly smaller for medium screens */
+        padding: 20px; /* Adjust padding for smaller containers */
     }
 
     .paragraphs p {
@@ -136,11 +137,40 @@ body {
     }
 
     .paragraphs {
-        font-size: 1.1rem; 
+        font-size: 1.1rem; /* Further reduce font size */
         padding: 15px;
     }
 
     .paragraphs p {
         font-size: 1.1rem;
+    }
+}
+
+/* 2560x1440 Screens */
+@media (min-width: 2560px) {
+    body {
+        font-size: 1.2rem; /* Increase base font size for larger screens */
+    }
+
+    .paragraphs {
+        max-width: 1200px; /* Wider paragraphs for larger screens */
+        font-size: 1.6rem; /* Larger text for readability */
+        line-height: 2; /* Adjust line spacing for a clean layout */
+        padding: 40px; /* More padding for a spacious look */
+    }
+
+    .side {
+        width: 250px; /* Slightly wider sidebar for large screens */
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .content {
+        margin-left: 270px; /* Match sidebar width with some spacing */
+        max-width: 1200px; /* Increase content area width */
+    }
+
+    #footer {
+        font-size: 1.1rem; /* Slightly larger footer text */
+        padding: 15px; /* Add padding for better proportions */
     }
 }
