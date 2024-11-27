@@ -1,8 +1,14 @@
+/* Load the custom Viking font */
+@font-face {
+    font-family: 'viking'; /* Custom name for the font */
+    src: url('fonts/viking') /* Adjust path if needed */
+}
+
 /* General Styles */
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'viking', serif; /* Use Viking font as the primary font */
     margin: 0;
 }
 
@@ -25,32 +31,57 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.side h2, .side button, .side p {
+.side h2 {
+    font-family: 'viking', serif; /* Apply Viking font to sidebar heading */
     text-align: center;
+    font-size: 1.6rem;
+    color: #ffcc00; /* Golden yellow for a Viking aesthetic */
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
 }
 
+.side button {
+    font-family: 'viking', serif; /* Apply font to buttons */
+    font-size: 1.2rem;
+    color: white;
+    background-color: #550000; /* Deep red for Viking style */
+    border: 2px solid #ffcc00; /* Golden border */
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px black;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.side button:hover {
+    background-color: #770000; /* Brighter red on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Author and Separators */
 #author {
-    opacity: 0.5;
-    font-size: 10px;
+    opacity: 0.7;
+    font-size: 0.9rem;
+    text-align: center;
     margin-top: auto;
 }
 
 #hr, #hr2 {
-    background-color: white;
+    background-color: #ffcc00; /* Golden color for horizontal lines */
     height: 1px;
     border: none;
 }
 
 /* Open Button */
 #open {
+    font-family: 'viking', serif;
     margin: 15px;
     background: black;
-    color: white;
-    border: none;
+    color: #ffcc00; /* Match Viking theme */
+    border: 2px solid #ffcc00;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 2px 2px 10px white;
+    box-shadow: 2px 2px 10px #ffcc00;
 }
 
 /* Content Section */
@@ -60,45 +91,49 @@ body {
     max-width: 900px;
 }
 
-/* Paragraphs Section */
 .paragraphs {
-    max-width: 800px; /* Maximum width for larger screens */
-    width: 90%; /* Take up 90% of the screen on smaller devices */
-    margin: 20px auto; /* Center horizontally and add vertical spacing */
-    padding: 30px; /* Add padding for spacing */
-    font-size: 1.4rem; /* Larger font size for readability */
-    line-height: 1.8; /* Increase line spacing for better readability */
+    max-width: 800px; 
+    width: 90%; 
+    margin: 20px auto; 
+    padding: 30px; 
+    font-size: 1.4rem; 
+    line-height: 1.8; 
     color: white;
-    text-shadow: 1px 1px 5px white;
-    background-color: rgba(0, 0, 0, 0.6); /* Subtle background for contrast */
-    border-radius: 10px; /* Rounded corners */
-    text-align: center; /* Center the text */
+    font-family: 'viking', serif; /* Apply font to paragraph text */
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px; 
+    text-align: center; 
+    border: 2px solid #ffcc00;
 }
 
 .paragraphs h2 {
     color: white;
-    text-decoration: underline red;
+    font-family: 'viking', serif; /* Heading styled with font */
+    text-decoration: underline #ffcc00;
+    text-shadow: 1px 1px 6px #ffcc00;
 }
 
 .paragraphs p {
     font-size: 1.4rem;
     line-height: 1.8;
     margin-bottom: 1rem;
-    text-shadow: 1px 1px 5px red;
 }
 
 /* Footer */
 #footer {
+    font-family: 'viking', serif;
     text-align: center;
     padding: 10px;
     background: #222;
     color: white;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 5px #ffcc00;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-/* Responsive Design */
+/* Responsive Styles */
 @media (max-width: 768px) {
     .side {
         width: 150px;
@@ -113,12 +148,8 @@ body {
     }
 
     .paragraphs {
-        font-size: 1.2rem; /* Slightly smaller for medium screens */
-        padding: 20px; /* Adjust padding for smaller containers */
-    }
-
-    .paragraphs p {
-        font-size: 1.2rem;
+        font-size: 1.2rem; 
+        padding: 20px; 
     }
 }
 
@@ -137,40 +168,7 @@ body {
     }
 
     .paragraphs {
-        font-size: 1.1rem; /* Further reduce font size */
+        font-size: 1.1rem; 
         padding: 15px;
-    }
-
-    .paragraphs p {
-        font-size: 1.1rem;
-    }
-}
-
-/* 2560x1440 Screens */
-@media (min-width: 2560px) {
-    body {
-        font-size: 1.2rem; /* Increase base font size for larger screens */
-    }
-
-    .paragraphs {
-        max-width: 1200px; /* Wider paragraphs for larger screens */
-        font-size: 1.6rem; /* Larger text for readability */
-        line-height: 2; /* Adjust line spacing for a clean layout */
-        padding: 40px; /* More padding for a spacious look */
-    }
-
-    .side {
-        width: 250px; /* Slightly wider sidebar for large screens */
-        font-size: 1.2rem; /* Adjust font size */
-    }
-
-    .content {
-        margin-left: 270px; /* Match sidebar width with some spacing */
-        max-width: 1200px; /* Increase content area width */
-    }
-
-    #footer {
-        font-size: 1.1rem; /* Slightly larger footer text */
-        padding: 15px; /* Add padding for better proportions */
     }
 }
