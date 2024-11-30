@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'viking'; /* Custom name for the font */
-    src: url('fonts/viking') /* Adjust path if needed */
+    font-family: 'viking'; 
+    src: url('/fonts/viking.otf') 
 }
 
-/* General Styles */
+
 body {
     background-color: black;
     color: white;
-    font-family: 'viking', serif; /* Use Viking font as the primary font */
+    font-family: 'viking', serif; 
     margin: 0;
 }
 
-/* Sidebar Styles */
+
 .side {
     width: 200px;
     height: 100vh; 
@@ -31,19 +31,19 @@ body {
 }
 
 .side h2 {
-    font-family: 'viking', serif; /* Apply Viking font to sidebar heading */
+    font-family: 'viking', serif; 
     text-align: center;
     font-size: 1.6rem;
-    color: #ffcc00; /* Golden yellow for a Viking aesthetic */
+    color: #ffcc00; 
     text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
 }
 
 .side button {
-    font-family: 'viking', serif; /* Apply font to buttons */
+    font-family: 'viking', serif; 
     font-size: 1.2rem;
     color: white;
-    background-color: #550000; /* Deep red for Viking style */
-    border: 2px solid #ffcc00; /* Golden border */
+    background-color: #550000;
+    border: 2px solid #ffcc00; 
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
@@ -56,7 +56,7 @@ body {
     transform: scale(1.05); /* Slightly enlarge button */
 }
 
-/* Author and Separators */
+
 #author {
     opacity: 0.7;
     font-size: 0.9rem;
@@ -82,7 +82,10 @@ body {
     cursor: pointer;
     box-shadow: 2px 2px 10px #ffcc00;
 }
-
+#open:hover {
+transform: scale(1.05);
+background-color: #333;
+}
 /* Content Section */
 .content {
     margin-left: 220px;
@@ -103,6 +106,7 @@ body {
     border-radius: 10px; 
     text-align: center; 
     border: 2px solid #ffcc00;
+    margin-left: 200px;
 }
 
 .paragraphs h2 {
