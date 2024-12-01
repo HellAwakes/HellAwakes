@@ -10,7 +10,7 @@ function savePreferences() {
     // Notify the user
     alert("Innstillinger lagret!");
   }
-  
+
   // Apply preferences immediately without saving
   function applyPreferences() {
     const color3 = document.getElementById("color3").value;
