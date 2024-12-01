@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: slategrey;
+}
+body{
+    background-color: black;
+}
+#save-settings{
+    color: white;
+    background-color: black;
+    border: none;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 100px;
+
+}
+
+#div1{
+    position: absolute;
+    bottom: 400px;
+    left: 300px;
+}
+#div3{
+    color: white;
+    position: absolute;
+    bottom: 50px;
+}
+#fontsize{
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+}
+#font{
+    color: white;
+    position: absolute;
+
+bottom: 120px;
+}
