@@ -1,6 +1,11 @@
 @font-face {
+<<<<<<< Updated upstream
     font-family: 'viking'; 
     src: url('../fonts//viking.otf') 
+=======
+    font-family: 'viking'; /* Custom name for the font */
+    src: url('https://www.fontspace.com/norse-font-f21080') /* Adjust path if needed */
+>>>>>>> Stashed changes
 }
 
 

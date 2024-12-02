@@ -1,38 +1,76 @@
-h1{
+h1 {
     text-align: center;
     font-size: 50px;
     color: slategrey;
 }
-body{
-    background-color: black;
+
+body {
+    background-color: var(--background-color, black); /* Dynamic background color */
+    font-size: var(--font-size, 16px); /* Dynamic font size */
 }
-#save-settings{
+
+#save-settings,
+#reset-settings {
     color: white;
     background-color: black;
     border: none;
     box-shadow: 2px 2px 10px white;
     border-radius: 100px;
-
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
-#div1{
+#div1 {
     position: absolute;
     bottom: 400px;
     left: 300px;
 }
-#div3{
-    color: white;
-    position: absolute;
-    bottom: 50px;
-}
-#fontsize{
-    position: absolute;
-    bottom: 100px;
-    right: 10px;
-}
-#font{
-    color: white;
-    position: absolute;
 
-bottom: 120px;
+#div2 {
+    margin-bottom: 20px;
+}
+
+#fontsize {
+    display: block;
+    margin-top: 10px;
+}
+
+#fontsize-value {
+    margin-left: 10px;
+    color: white;
+}
+
+#div3 {
+    margin-top: 30px;
+    color: white;
+}
+
+#color3 {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Media query for 2560x1440 screen */
+@media screen and (min-width: 2560px) and (min-height: 1440px) {
+    body {
+        margin: 0 auto; /* Center the content */
+        width: 80%; /* Adjust width for larger screens */
+        max-width: 1920px; /* Prevent content from stretching too far */
+    }
+
+    #div1 {
+        bottom: 500px;
+        left: 600px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    #div2,
+    #div3 {
+        font-size: 18px;
+    }
 }
