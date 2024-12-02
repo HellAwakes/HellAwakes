@@ -1,11 +1,18 @@
+/* Define custom font */
+@font-face {
+    font-family: 'Viking';
+    src: url('../fonts/viking.otf'); /* Path to the font in your 'fonts' folder */
+}
+
+/* Global styles */
 :root {
+    --font-family: Arial; /* Default font */
     --background-color: black;
     --font-size: 16px;
-    --font-family: Arial; /* Default font */
 }
 
 body {
+    font-family: var(--font-family);
     background-color: var(--background-color);
     font-size: var(--font-size);
-    font-family: var(--font-family);
 }

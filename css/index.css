@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'viking'; /* Custom name for the font */
-    src: url('../fonts/viking.otf') format('opentype'); /* Correct path and format */
-}
 
 
 body {
