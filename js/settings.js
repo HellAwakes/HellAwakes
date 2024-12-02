@@ -3,7 +3,6 @@ function savePreferences() {
   const color3 = document.getElementById("color3").value;
   const fontsize = document.getElementById("fontsize").value;
 
-  // Save preferences to localStorage
   localStorage.setItem("color3", color3);
   localStorage.setItem("fontsize", fontsize);
 
@@ -15,57 +14,60 @@ function applyPreferences() {
   const color3 = document.getElementById("color3").value;
   const fontsize = document.getElementById("fontsize").value;
 
-  // Apply styles
+  // Apply styles dynamically
   document.documentElement.style.setProperty("--background-color", color3);
   document.documentElement.style.setProperty("--font-size", fontsize + "px");
 
-  // Update font size display
   document.getElementById("fontsize-value").textContent = fontsize + "px";
 }
 
-// Load saved preferences on page load
+// Load preferences on page load
 function loadPreferences() {
-  const savedColor3 = localStorage.getItem("color3") || "#000000"; // Default: black
+  const savedColor3 = localStorage.getItem("color3") || "#f5f5f5";
   const savedFontSize = localStorage.getItem("fontsize") || "16";
+  const savedFontFamily = localStorage.getItem("font-family") || "Arial";
 
   // Apply saved preferences
-  document.getElementById("color3").value = savedColor3;
-  document.getElementById("fontsize").value = savedFontSize;
-
   document.documentElement.style.setProperty("--background-color", savedColor3);
   document.documentElement.style.setProperty("--font-size", savedFontSize + "px");
+  document.documentElement.style.setProperty("--font-family", savedFontFamily);
 
-  // Update font size display
+  // Reflect saved values in the inputs
+  document.getElementById("color3").value = savedColor3;
+  document.getElementById("fontsize").value = savedFontSize;
   document.getElementById("fontsize-value").textContent = savedFontSize + "px";
 }
 
 // Reset preferences to default
 function resetPreferences() {
-  const defaultColor = "#000000"; // Black
-  const defaultFontSize = "16";  // 16px
-
-  // Clear localStorage
+  // Reset to default values
   localStorage.removeItem("color3");
   localStorage.removeItem("fontsize");
+  localStorage.removeItem("font-family");
 
-  // Apply default styles
-  document.getElementById("color3").value = defaultColor;
-  document.getElementById("fontsize").value = defaultFontSize;
-
-  document.documentElement.style.setProperty("--background-color", defaultColor);
-  document.documentElement.style.setProperty("--font-size", defaultFontSize + "px");
-
-  // Update font size display
-  document.getElementById("fontsize-value").textContent = defaultFontSize + "px";
+  loadPreferences(); // Reload default values
 
   alert("Settings reset to default!");
+}
+
+// Toggle font family between Viking and Arial
+function toggleFont() {
+  const currentFontFamily = localStorage.getItem("font-family") || "Arial";
+  const newFontFamily = currentFontFamily === "Arial" ? "Viking" : "Arial";
+
+  // Apply and save the new font family
+  document.documentElement.style.setProperty("--font-family", newFontFamily);
+  localStorage.setItem("font-family", newFontFamily);
+
+  alert(`Font switched to ${newFontFamily === "Viking" ? "Viking" : "default (Arial)"}.`);
 }
 
 // Event listeners
 document.getElementById("save-settings").addEventListener("click", savePreferences);
 document.getElementById("reset-settings").addEventListener("click", resetPreferences);
+document.getElementById("toggle-font").addEventListener("click", toggleFont);
 document.getElementById("color3").addEventListener("input", applyPreferences);
 document.getElementById("fontsize").addEventListener("input", applyPreferences);
 
-// Load preferences when the page is loaded
+// Load preferences when the page loads
 window.addEventListener("load", loadPreferences);

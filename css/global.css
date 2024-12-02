@@ -1,0 +1,11 @@
+:root {
+    --background-color: black;
+    --font-size: 16px;
+    --font-family: Arial; /* Default font */
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
