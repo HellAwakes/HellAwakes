@@ -23,14 +23,12 @@ function applyPreferences() {
 
 // Load preferences on page load
 function loadPreferences() {
-  const savedColor3 = localStorage.getItem("color3") || "#f5f5f5";
-  const savedFontSize = localStorage.getItem("fontsize") || "16";
-  const savedFontFamily = localStorage.getItem("font-family") || "Arial";
+  const savedColor3 = localStorage.getItem("color3") || "#080606"; // Default background color
+  const savedFontSize = localStorage.getItem("fontsize") || "16"; // Default font size
 
   // Apply saved preferences
   document.documentElement.style.setProperty("--background-color", savedColor3);
   document.documentElement.style.setProperty("--font-size", savedFontSize + "px");
-  document.documentElement.style.setProperty("--font-family", savedFontFamily);
 
   // Reflect saved values in the inputs
   document.getElementById("color3").value = savedColor3;
@@ -43,29 +41,15 @@ function resetPreferences() {
   // Reset to default values
   localStorage.removeItem("color3");
   localStorage.removeItem("fontsize");
-  localStorage.removeItem("font-family");
 
   loadPreferences(); // Reload default values
 
   alert("Settings reset to default!");
 }
 
-// Toggle font family between Viking and Arial
-function toggleFont() {
-  const currentFontFamily = localStorage.getItem("font-family") || "Arial";
-  const newFontFamily = currentFontFamily === "Arial" ? "Viking" : "Arial";
-
-  // Apply and save the new font family
-  document.documentElement.style.setProperty("--font-family", newFontFamily);
-  localStorage.setItem("font-family", newFontFamily);
-
-  alert(`Font switched to ${newFontFamily === "Viking" ? "Viking" : "default (Arial)"}.`);
-}
-
 // Event listeners
 document.getElementById("save-settings").addEventListener("click", savePreferences);
 document.getElementById("reset-settings").addEventListener("click", resetPreferences);
-document.getElementById("toggle-font").addEventListener("click", toggleFont);
 document.getElementById("color3").addEventListener("input", applyPreferences);
 document.getElementById("fontsize").addEventListener("input", applyPreferences);
 

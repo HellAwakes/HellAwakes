@@ -1,6 +1,6 @@
 // Load preferences from localStorage
 function loadPreferences() {
-    const savedColor3 = localStorage.getItem("color3") || "#f5f5f5"; // Default color
+    const savedColor3 = localStorage.getItem("color3") || "#080606"; // Default color
     const savedFontSize = localStorage.getItem("fontsize") || "16"; // Default font size
 
     // Apply the saved background color

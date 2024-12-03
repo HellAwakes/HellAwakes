@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'viking';
+    src: url(../fonts/viking.otf);
+}
 
 body {
     background-color: black;
