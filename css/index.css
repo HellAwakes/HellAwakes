@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-
+/* Sidebar */
 .side {
     width: 200px;
     height: 100vh; 
@@ -55,10 +55,11 @@ body {
     transform: scale(1.05); /* Slightly enlarge button */
 }
 
-.side img{
-width: 50px;
-margin-top: auto;
+.side img {
+    width: 50px;
+    margin-top: auto;
 }
+
 #author {
     opacity: 0.7;
     font-size: 0.9rem;
@@ -70,6 +71,58 @@ margin-top: auto;
     background-color: #ffcc00; /* Golden color for horizontal lines */
     height: 1px;
     border: none;
+}
+
+/* Title Section */
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Reduced height for better balance */
+    text-align: center;
+    background: linear-gradient(180deg, #111, #333); /* Background gradient */
+    border-bottom: 3px solid #ffcc00; /* Viking-themed border */
+}
+
+#title h1 {
+    font-size: 4rem; /* Slightly smaller text size */
+    font-family: 'viking', serif;
+    color: #ffcc00; /* Golden color for the title */
+    text-shadow: 3px 3px 8px rgba(255, 204, 0, 0.8), 2px 2px 6px black; /* Adjusted glow */
+    margin: 0;
+    line-height: 1.2;
+}
+
+#title h1:hover{
+    color: rgb(252, 225, 72);
+    text-shadow: 4px 4px 6px rgb(255, 246, 192);
+}
+/* Adjust for resolutions below 2560px */
+@media (max-width: 2560px) {
+    #title h1 {
+        font-size: 3.5rem; /* Reduced slightly for large screens under 2560px */
+    }
+}
+
+/* Adjust for resolutions below 1920px (standard 1080p screens) */
+@media (max-width: 1920px) {
+    #title h1 {
+        font-size: 3.2rem; /* Slightly smaller for standard large screens */
+    }
+}
+
+/* Adjust for resolutions below 1440px */
+@media (max-width: 1440px) {
+    #title h1 {
+        font-size: 3rem; /* Moderate size for smaller large screens */
+    }
+}
+
+/* Ensure readability on smaller resolutions */
+@media (max-width: 1280px) {
+    #title h1 {
+        font-size: 2.8rem; /* Slightly reduced for smaller screens */
+    }
 }
 
 /* Open Button */
@@ -84,10 +137,12 @@ margin-top: auto;
     cursor: pointer;
     box-shadow: 2px 2px 10px #ffcc00;
 }
+
 #open:hover {
-transform: scale(1.05);
-background-color: #333;
+    transform: scale(1.05);
+    background-color: #333;
 }
+
 /* Content Section */
 .content {
     margin-left: 220px;
