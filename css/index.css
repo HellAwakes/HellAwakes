@@ -98,6 +98,22 @@ body {
     text-shadow: 4px 4px 6px rgb(255, 246, 192);
 }
 /* Adjust for resolutions below 2560px */
+#img1{
+    border-radius: 1000px;
+    height: 50px;
+    box-shadow: 3px 3px 6px red;
+}
+
+.TitleClass{
+    display: flex;
+    justify-content: right;
+
+}
+
+#img1:hover{
+    box-shadow: 7px 7px 7px darkred;
+    height: 55px;
+}
 @media (max-width: 2560px) {
     #title h1 {
         font-size: 3.5rem; /* Reduced slightly for large screens under 2560px */
