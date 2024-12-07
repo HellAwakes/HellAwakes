@@ -76,44 +76,45 @@ body {
 /* Title Section */
 #title {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px; /* Reduced height for better balance */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center the title horizontally */
+    height: 250px;
     text-align: center;
-    background: linear-gradient(180deg, #111, #333); /* Background gradient */
-    border-bottom: 3px solid #ffcc00; /* Viking-themed border */
+    background: linear-gradient(180deg, #111, #333);
+    border-bottom: 3px solid #ffcc00;
+    position: relative;
 }
 
+/* Title Text */
 #title h1 {
-    font-size: 4rem; /* Slightly smaller text size */
+    font-size: 4rem;
     font-family: 'viking', serif;
-    color: #ffcc00; /* Golden color for the title */
-    text-shadow: 3px 3px 8px rgba(255, 204, 0, 0.8), 2px 2px 6px black; /* Adjusted glow */
+    color: #ffcc00;
+    text-shadow: 3px 3px 8px rgba(255, 204, 0, 0.8), 2px 2px 6px black;
     margin: 0;
     line-height: 1.2;
 }
 
-#title h1:hover{
-    color: rgb(252, 225, 72);
-    text-shadow: 4px 4px 6px rgb(255, 246, 192);
+/* YouTube Logo Section */
+.underbuttons {
+    position: absolute;
+    bottom: 10px; /* Adjust the spacing as needed */
+    right: 20px;  /* Align to the right side of the container */
 }
-/* Adjust for resolutions below 2560px */
-#img1{
+
+#img1 {
     border-radius: 1000px;
     height: 50px;
     box-shadow: 3px 3px 6px red;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.TitleClass{
-    display: flex;
-    justify-content: right;
-
-}
-
-#img1:hover{
+#img1:hover {
     box-shadow: 7px 7px 7px darkred;
-    height: 55px;
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
+
+/* Adjust for resolutions below 2560px */
 @media (max-width: 2560px) {
     #title h1 {
         font-size: 3.5rem; /* Reduced slightly for large screens under 2560px */
@@ -209,6 +210,19 @@ body {
     width: 100%;
 }
 
+#Northern{
+    width: 150px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 3px 3px 6px white;
+    background-color: black;
+    color: white;
+}
+
+#Northern:hover{
+   box-shadow: 5px 5px 8px white;
+   transform: scale(1.1);
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .side {
