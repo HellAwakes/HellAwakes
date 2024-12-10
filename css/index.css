@@ -69,7 +69,7 @@ body {
 
 #hr, #hr2 {
     background-color: #ffcc00; /* Golden color for horizontal lines */
-    height: 1px;
+    height: 3px;
     border: none;
 }
 
@@ -100,13 +100,16 @@ body {
     position: absolute;
     bottom: 10px; /* Adjust the spacing as needed */
     right: 20px;  /* Align to the right side of the container */
+
+    
 }
 
 #img1 {
     border-radius: 1000px;
-    height: 50px;
+    height: 35px;
     box-shadow: 3px 3px 6px red;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
+   
 }
 
 #img1:hover {
@@ -217,11 +220,54 @@ body {
     box-shadow: 3px 3px 6px white;
     background-color: black;
     color: white;
+    padding: 6pz;
+    margin-right: 30px;
+transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 #Northern:hover{
    box-shadow: 5px 5px 8px white;
    transform: scale(1.1);
+}
+
+#support-button{
+    border: none;
+    border-radius: 100px;
+    background-color: black;
+    box-shadow: 2px 2px 4px white;
+    color: white;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+#support-button:hover{
+    box-shadow: 5px 5px 8px white;
+    transform: scale(1.1);
+}
+#newsletter-button{
+    border: none;
+    border-radius: 100px;
+    background-color: black;
+    box-shadow: 2px 2px 4px white;
+    color: white;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+#newsletter-button:hover{
+    box-shadow: 5px 5px 8px white;
+    transform: scale(1.1);
+}
+#faq-button{
+    border: none;
+    border-radius: 100px;
+    background-color: black;
+    box-shadow: 2px 2px 4px white;
+    color: white;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+#faq-button:hover{
+    box-shadow: 5px 5px 8px white;
+    transform: scale(1.1);
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
