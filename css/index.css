@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-/* Sidebar */
+
 .side {
     width: 200px;
     height: 100vh; 
@@ -51,8 +51,8 @@ body {
 }
 
 .side button:hover {
-    background-color: #770000; /* Brighter red on hover */
-    transform: scale(1.05); /* Slightly enlarge button */
+    background-color: #770000; 
+    transform: scale(1.05); 
 }
 
 .side img {
@@ -68,16 +68,16 @@ body {
 }
 
 #hr, #hr2 {
-    background-color: #ffcc00; /* Golden color for horizontal lines */
+    background-color: #ffcc00; 
     height: 3px;
     border: none;
 }
 
-/* Title Section */
+
 #title {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center the title horizontally */
+    flex-direction: column; 
+    align-items: center;
     height: 250px;
     text-align: center;
     background: linear-gradient(180deg, #111, #333);
@@ -85,7 +85,7 @@ body {
     position: relative;
 }
 
-/* Title Text */
+
 #title h1 {
     font-size: 4rem;
     font-family: 'viking', serif;
@@ -95,11 +95,11 @@ body {
     line-height: 1.2;
 }
 
-/* YouTube Logo Section */
+
 .underbuttons {
     position: absolute;
-    bottom: 10px; /* Adjust the spacing as needed */
-    right: 20px;  /* Align to the right side of the container */
+    bottom: 10px; 
+    right: 20px;  
 
     
 }
@@ -114,56 +114,62 @@ body {
 
 #img1:hover {
     box-shadow: 7px 7px 7px darkred;
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); 
 }
 
-/* Adjust for resolutions below 2560px */
+#Discover{
+   text-decoration: underline 4px gold;
+   font-size: 34px;
+}
 @media (max-width: 2560px) {
     #title h1 {
-        font-size: 3.5rem; /* Reduced slightly for large screens under 2560px */
+        font-size: 3.5rem; 
     }
 }
 
-/* Adjust for resolutions below 1920px (standard 1080p screens) */
+
 @media (max-width: 1920px) {
     #title h1 {
-        font-size: 3.2rem; /* Slightly smaller for standard large screens */
+        font-size: 3.2rem; 
     }
 }
 
-/* Adjust for resolutions below 1440px */
+
 @media (max-width: 1440px) {
     #title h1 {
-        font-size: 3rem; /* Moderate size for smaller large screens */
+        font-size: 3rem; 
     }
 }
 
-/* Ensure readability on smaller resolutions */
+
 @media (max-width: 1280px) {
     #title h1 {
-        font-size: 2.8rem; /* Slightly reduced for smaller screens */
+        font-size: 2.8rem; 
     }
 }
 
-/* Open Button */
+
 #open {
     font-family: 'viking', serif;
     margin: 15px;
     background: black;
-    color: #ffcc00; /* Match Viking theme */
+    color: #ffcc00; 
     border: 2px solid #ffcc00;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     box-shadow: 2px 2px 10px #ffcc00;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 #open:hover {
     transform: scale(1.05);
     background-color: #333;
+    box-shadow: 4px 4px 7px gold;
+    transform: scale(1.1);
 }
 
-/* Content Section */
+
 .content {
     margin-left: 220px;
     padding: 20px;
@@ -178,7 +184,7 @@ body {
     font-size: 1.4rem; 
     line-height: 1.8; 
     color: white;
-    font-family: 'viking', serif; /* Apply font to paragraph text */
+    font-family: 'viking', serif; 
     background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 10px; 
     text-align: center; 
@@ -188,7 +194,7 @@ body {
 
 .paragraphs h2 {
     color: white;
-    font-family: 'viking', serif; /* Heading styled with font */
+    font-family: 'viking', serif; 
     text-decoration: underline #ffcc00;
     text-shadow: 1px 1px 6px #ffcc00;
 }
@@ -199,7 +205,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Footer */
+
 #footer {
     font-family: 'viking', serif;
     text-align: center;
@@ -269,7 +275,7 @@ transition: box-shadow 0.2s ease, transform 0.2s ease;
     box-shadow: 5px 5px 8px white;
     transform: scale(1.1);
 }
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .side {
         width: 150px;
