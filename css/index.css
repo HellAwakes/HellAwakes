@@ -283,6 +283,19 @@ transition: box-shadow 0.2s ease, transform 0.2s ease;
     transform: scale(1.1);
 }
 
+#imgset{
+    position: absolute;
+    bottom: 100px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    border: none;
+    border-radius: 200px;
+}
+
+#imgset:hover{
+   box-shadow: 5px 5px 8px white;
+   box-shadow: -5px -5px 8px white;
+    transform: scale(1.1); 
+}
 @media (max-width: 768px) {
     .side {
         width: 150px;
