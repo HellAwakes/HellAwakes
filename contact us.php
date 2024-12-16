@@ -8,6 +8,6 @@
 </head>
 <body>
    <a href="login.php">
-   <button>log</button></a> 
+   <button style="color: red;">log</button></a> 
 </body>
 </html>
