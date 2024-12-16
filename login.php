@@ -7,7 +7,7 @@
 </head>
 <body>
     
-<form action="login.php" method="get">
+<form action="login.php" method="post">
     <label for="uname">Enter your username here:</label>
     <input type="text" name="username">
     <br>
@@ -20,8 +20,8 @@
 </html>
 
 <?php
-echo "{$_GET["username"]} <br>";
-echo "{$_GET["password"]} <br>";
+echo "{$_POST["username"]} <br>";
+echo "{$_POST["password"]} <br>";
 
 
 
