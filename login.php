@@ -8,21 +8,21 @@
 <body>
     
 <form action="login.php" method="post">
-    <label for="uname">Enter your username here:</label>
-    <input type="text" name="username">
-    <br>
-    <label for="password">Enter your password here:</label>
-    <input type="text" name="password">
-<input type="submit" value="log in">
+<label> quantity:</label><br>
+<input type="text" name="quantity">
+<input type="submit" value="total">
 
+</form>
 </form>
 </body>
 </html>
 
 <?php
-echo "{$_POST["username"]} <br>";
-echo "{$_POST["password"]} <br>";
+$item = "pizza";
+ $price = 5.99;
+$quantity = $_POST["quantity"];
 
-
+echo"you have ordered {$quantity} x {$item}/s";
+echo"your total is : \${$total}";
 
 ?>
