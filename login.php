@@ -7,12 +7,22 @@
 </head>
 <body>
     
-<div class="Login">
-    <label for="fname">Enter your username here:</label>
-    <input type="text" id="fname">
+<form action="login.php" method="get">
+    <label for="uname">Enter your username here:</label>
+    <input type="text" name="username">
     <br>
     <label for="password">Enter your password here:</label>
-    <input type="text" id="password">
+    <input type="text" name="password">
+<input type="submit" value="log in">
 
+</form>
 </body>
 </html>
+
+<?php
+echo $_GET["username"];
+echo $_GET["password"];
+
+
+
+?>
