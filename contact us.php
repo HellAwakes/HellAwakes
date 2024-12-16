@@ -7,19 +7,7 @@
     <link rel="stylesheet" href="css/contact us.css">
 </head>
 <body>
-    <div class="Contactform">
-    <label for="fname">Enter your first name here:</label>
-    <input type="text" id="fname">
-    <br>
-    <label for="Lname">Enter your last name here:</label>
-    <input type="text" id="Lname">
-    <br>
-    <label for="gmail"> Put your Gmail here:</label>
-     <input type="email" name="gmail" id="gmail">
-     <br>
-     <hr>
-     <label for="Comment"> Message </label>
-     <textarea name="Comment" id="Comment"></textarea>
-   </div>
+   <a href="login.php">
+   <button>log</button></a> 
 </body>
 </html>
