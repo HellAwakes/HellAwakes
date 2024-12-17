@@ -34,21 +34,14 @@ body {
     transition: transform 0.3s ease;
     z-index: 1000;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to bottom, #000000, transparent);
-
-
-
-
-    
 }
 
-.side h1 {
+.side h2 {
     font-family: 'viking', serif; 
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #ffcc00; 
     text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
-    text-decoration: underline;
 }
 
 .side button {
@@ -183,27 +176,6 @@ body {
     transform: scale(1.1);
 }
 
-#close {
-    font-family: 'viking', serif;
-    margin: 15px;
-    background: black;
-    color: #ffcc00; 
-    border: 2px solid #ffcc00;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px #ffcc00;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-    display: none;
-}
-
-#close:hover {
-    transform: scale(1.05);
-    background-color: #333;
-    box-shadow: 4px 4px 7px gold;
-    transform: scale(1.1);
-}
-
 
 .content {
     margin-left: 220px;
@@ -256,69 +228,59 @@ body {
 
 #Northern{
     width: 150px;
-    border: red solid 2px ;
-    border-radius: 10px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 3px 3px 6px white;
     background-color: black;
-    color:  white;
-    padding: 6px;
+    color: white;
+    padding: 6pz;
     margin-right: 30px;
 transition: box-shadow 0.2s ease, transform 0.2s ease;
-
-
 }
 
 #Northern:hover{
-    box-shadow: -9px 0 10px rgba(255, 251, 0, 0.5), 9px 0 10px rgba(255, 251, 0, 0.5);
-    transform: scale(1.1);
-    color: rgb(236, 238, 140);
-    border: solid 3px;
+   box-shadow: 5px 5px 8px white;
+   transform: scale(1.1);
 }
 
 #support-button{
     border: none;
     border-radius: 100px;
     background-color: black;
-    
+    box-shadow: 2px 2px 4px white;
     color: white;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
     margin-right: 10px;
 }
 #support-button:hover{
-    box-shadow: -7px 0 10px rgba(255, 251, 0, 0.5), 7px 0 10px rgba(255, 251, 0, 0.5);
+    box-shadow: 5px 5px 8px white;
     transform: scale(1.1);
-    color: rgb(236, 238, 140);
-    border: solid 3px;
 }
 #newsletter-button{
     border: none;
     border-radius: 100px;
     background-color: black;
-   
+    box-shadow: 2px 2px 4px white;
     color: white;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
     margin-right: 10px;
 }
 #newsletter-button:hover{
-    box-shadow: -7px 0 10px rgba(255, 251, 0, 0.5), 7px 0 10px rgba(255, 251, 0, 0.5);
+    box-shadow: 5px 5px 8px white;
     transform: scale(1.1);
-    color: rgb(236, 238, 140);
-    border: solid 2px;
 }
 #faq-button{
     border: none;
     border-radius: 100px;
-    background-color: rgb(0, 0, 0);
-    height: 40px;
+    background-color: black;
+    box-shadow: 2px 2px 4px white;
     color: white;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
     margin-right: 10px;
-   
 }
 #faq-button:hover{
-    box-shadow: -7px 0 10px rgba(255, 251, 0, 0.5), 7px 0 10px rgba(255, 251, 0, 0.5);
+    box-shadow: 5px 5px 8px white;
     transform: scale(1.1);
-    color: rgb(236, 238, 140);
-    border: solid 2px;
 }
 
 #imgset{
@@ -330,9 +292,9 @@ transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 #imgset:hover{
-    box-shadow: -7px 0 10px rgba(0, 217, 255, 0.5), 7px 0 10px rgba(0, 195, 255, 0.5);
-    transform: scale(1.1);
-    border: solid 1px;
+   box-shadow: 5px 5px 8px white;
+   box-shadow: -5px -5px 8px white;
+    transform: scale(1.1); 
 }
 @media (max-width: 768px) {
     .side {
@@ -373,7 +335,4 @@ transition: box-shadow 0.2s ease, transform 0.2s ease;
     }
 }
 
-/* This button is not available as its in experimenting stage */
-#contact{
-    display: none;
-}
+
