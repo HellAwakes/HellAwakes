@@ -374,6 +374,3 @@ transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 /* This button is not available as its in experimenting stage */
-#contact{
-    display: none;
-}
